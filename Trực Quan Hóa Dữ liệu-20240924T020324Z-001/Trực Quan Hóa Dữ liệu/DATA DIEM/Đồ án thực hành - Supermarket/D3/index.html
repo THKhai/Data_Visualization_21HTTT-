@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data visualization - Group 07</title>
+    <meta charset="UTF-8" />
+    <style>
+      .box {
+        width: 120px;
+        height: 20px;
+        display: flex;
+        line-height: 20px;
+        text-align: center;
+      }
+      .box1 {
+        width: 18px;
+        height: 18px;
+        background-color: red;
+      }
+      .A,
+      .B,
+      .C {
+        padding-left: 5px;
+      }
+      .box2 {
+        width: 18px;
+        height: 18px;
+        background-color: #377eb8;
+      }
+      .box3 {
+        width: 18px;
+        height: 18px;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h5>Biểu đồ thống kê tổng doanh thu bán hàng của các chi nhánh</h5>
+    <div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="A">Branch A</div>
+      </div>
+      <div class="box">
+        <div class="box2"></div>
+        <div class="B">Branch B</div>
+      </div>
+      <div class="box">
+        <div class="box3"></div>
+        <div class="C">Branch C</div>
+      </div>
+    </div>
+    <div id="barchart"></div>
+    <h5>
+      Biểu đồ thể hiện số lượng hóa đơn bán hàng giữa loại khách hàng Normal và
+      Member theo từng chi nhánh
+    </h5>
+    <div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="A">Member</div>
+      </div>
+      <div class="box">
+        <div class="box2"></div>
+        <div class="B">Normal</div>
+      </div>
+      <br />
+    </div>
+    <div id="stackedBarChart"></div>
+    <script src="./d3.v4.js"></script>
+  </body>
+  <script src="./barchart.js"></script>
+  <script src="./stackedbarchart.js"></script>
+</html>
